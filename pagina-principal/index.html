@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contato">
+        <h1>Entre em Contato:</h1>
+        <form action="https://formsubmit.co/kwybernardo@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://kowacontactthanks.netlify.app">
+
+            <input type="text" name="name" required placeholder="Nome">
+            <input type="email" name="email" required placeholder="E-mail">
+            <input type="text" name="_subject" required placeholder="Assunto">
+            <textarea name="mensagem" id="msg" cols="30" rows="10" required placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
