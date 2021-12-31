@@ -9,19 +9,35 @@
 </head>
 <body>
 
+    <!-- Formulário para Contato -->
     <div class="contato">
         <h1>Entre em Contato:</h1>
+
+        <!-- Utilizand0 do fromsubmit -->
         <form action="https://formsubmit.co/kwybernardo@gmail.com" method="POST">
+            <!-- Desativa o captcha -->
             <input type="hidden" name="_captcha" value="false">
+
+            <!-- Após enviar, redireciona para a página de agradecimento -->
             <input type="hidden" name="_next" value="https://kowacontactthanks.netlify.app">
 
+            <!-- Nome -->
             <input type="text" name="name" required placeholder="Nome">
+
+            <!-- Email -->
             <input type="email" name="email" required placeholder="E-mail">
+
+            <!-- Assunto -->
             <input type="text" name="_subject" required placeholder="Assunto">
+
+            <!-- Caixa de Texto -->
             <textarea name="mensagem" id="msg" cols="30" rows="10" required placeholder="Mensagem"></textarea>
+
+            <!-- Botão de enviar -->
             <button type="submit">Enviar</button>
         </form>
     </div>
+    <!-- Fim do Formulário -->
 
 </body>
 </html>
